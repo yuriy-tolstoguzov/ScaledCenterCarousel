@@ -21,11 +21,34 @@ iOS 7+
 
 ## Installation
 
-ScaledCenterCarousel is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### [CocoaPods](http://cocoapods.org)
+
+To install
+it through [CocoaPods](http://cocoapods.org), simply add the following line to your Podfile:
 
 ```ruby
 pod "ScaledCenterCarousel"
+```
+
+Run update command in your terminal:
+
+```bash
+$ pod install
+```
+
+
+### [Carthage](https://github.com/Carthage/Carthage)
+
+Add this line to your Cartfile:
+
+```ruby
+github "yuriy-tolstoguzov/ScaledCenterCarousel"
+```
+
+Run update command in your terminal:
+
+```bash
+$ carthage update
 ```
 
 ## Author

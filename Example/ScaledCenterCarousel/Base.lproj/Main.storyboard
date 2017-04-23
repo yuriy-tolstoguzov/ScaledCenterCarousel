@@ -74,7 +74,7 @@
                                                 </label>
                                             </subviews>
                                         </view>
-                                        <color key="backgroundColor" white="0.93000000000000005" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.89715856481481493" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="TcH-MX-wim" firstAttribute="leading" secondItem="xEO-k8-sZ2" secondAttribute="leading" constant="1" id="4V0-14-Gd5"/>
                                             <constraint firstAttribute="bottom" secondItem="TcH-MX-wim" secondAttribute="bottom" constant="1" id="9KJ-76-8ru"/>

@@ -9,6 +9,8 @@ A carousel-based layout for UICollectionView with scaled center item.
 It contains optional paginator to force user to select single item which will be presented exaclty at center of carousel.
 Before using library, make sure to have a look at Example project.
 
+![alt tag](https://raw.githubusercontent.com/yuriy-tolstoguzov/ScaledCenterCarousel/master/Example/Assets/ScaledCenterCarousel.gif)
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

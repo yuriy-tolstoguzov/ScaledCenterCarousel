@@ -1,0 +1,6 @@
+framework module Pods_ScaledCenterCarousel_Tests {
+  umbrella header "Pods-ScaledCenterCarousel_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

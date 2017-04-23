@@ -1,0 +1,12 @@
+use_frameworks!
+
+target 'ScaledCenterCarousel_Example' do
+  pod 'ScaledCenterCarousel', :path => '../'
+
+  target 'ScaledCenterCarousel_Tests' do
+    inherit! :search_paths
+
+	pod 'Specta'
+	pod 'Expecta'
+  end
+end

@@ -1,0 +1,6 @@
+framework module ScaledCenterCarousel {
+  umbrella header "ScaledCenterCarousel-umbrella.h"
+
+  export *
+  module * { export * }
+}

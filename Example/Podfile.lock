@@ -1,0 +1,22 @@
+PODS:
+  - Expecta (1.0.5)
+  - ScaledCenterCarousel (0.1.0)
+  - Specta (1.0.6)
+
+DEPENDENCIES:
+  - Expecta
+  - ScaledCenterCarousel (from `../`)
+  - Specta
+
+EXTERNAL SOURCES:
+  ScaledCenterCarousel:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
+  ScaledCenterCarousel: 56f8aedda75dfeae260f5360c3e3ed27be67c58e
+  Specta: f506f3a8361de16bc0dcf3b17b75e269072ba465
+
+PODFILE CHECKSUM: 60029080b9aadec4da8c5b6712e2e396e9549830
+
+COCOAPODS: 1.2.0

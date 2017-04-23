@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ScaledCenterCarousel'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A carousel-based layout for UICollectionView with scaled center item.'
   s.description      = <<-DESC
 A carousel-based layout for UICollectionView with scaled center item. 

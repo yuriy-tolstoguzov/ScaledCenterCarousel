@@ -15,6 +15,28 @@ Before using library, make sure to have a look at Example project.
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
+## Customization
+
+The library is made purposely simple, but there are number of ways you can customize it. Most of properties could be set from IB via `IBInspectable`.
+
+### Layout
+
+- `centerCellHeight` - The height of cell at the center position.
+- `centerCellWidth` - The width of cell at the center position.
+- `normalCellHeight` - The height of cells that far enough from the center position.
+- `normalCellWidth` - The width of cells that far enough from the center position.
+- `proposedContentOffset` - The content offset that will be set once after next data source change. Think about adding items after you get them from web service and you want to pre-select one of them.
+
+### Pagination (UICollectionViewDelegate)
+
+If you want user to be able to select only one item at a time, you probably will use built-in `YTScaledCenterCarouselPaginator` and set it as your `UICollectionView` delegate.
+
+It has next delegate methods:
+- `-carousel:didSelectElementAtIndex:`
+- `-carousel:didScrollToVisibleCells:`
+
+If your data source will adopt `YTScaledCenterCarouselDataSource` protocol. It will always know what item is selected now and can use this knowledge to add some customization to selected cells. Also it encouraged to check cell selected state, because it's updated accordingly as well.
+
 ## Requirements
 
 iOS 7+

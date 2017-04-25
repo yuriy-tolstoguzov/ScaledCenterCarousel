@@ -1,5 +1,6 @@
 # ScaledCenterCarousel
 
+[![codebeat badge](https://codebeat.co/badges/aeac52c6-2b7d-4039-a01b-e2ff9ca45803)](https://codebeat.co/projects/github-com-yuriy-tolstoguzov-scaledcentercarousel-master)
 [![CI Status](http://img.shields.io/travis/yuriy-tolstoguzov/ScaledCenterCarousel.svg?style=flat)](https://travis-ci.org/yuriy-tolstoguzov/ScaledCenterCarousel)
 [![Version](https://img.shields.io/cocoapods/v/ScaledCenterCarousel.svg?style=flat)](http://cocoapods.org/pods/ScaledCenterCarousel)
 [![License](https://img.shields.io/cocoapods/l/ScaledCenterCarousel.svg?style=flat)](http://cocoapods.org/pods/ScaledCenterCarousel)

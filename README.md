@@ -77,6 +77,15 @@ $ carthage update
 
 yuriy-tolstoguzov, Yuriy.Tolstoguzov@gmail.com
 
+## Contribution
+
+If you want to contribute, here is couple of topics I have in mind:
+- [ ] Support for vertical layout
+- [ ] Documentation improvements
+- [ ] Swift migration
+
+Feel free to make a pull requests or contact me if you have questions.
+
 ## License
 
 ScaledCenterCarousel is available under the MIT license. See the LICENSE file for more info.

@@ -1,5 +1,7 @@
 use_frameworks!
 
+platform :ios, '8.3'
+
 target 'ScaledCenterCarousel_Example' do
   pod 'ScaledCenterCarousel', :path => '../'
 

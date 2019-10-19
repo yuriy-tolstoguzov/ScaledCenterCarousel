@@ -1,9 +1,12 @@
-osx_image: xcode8.3
+osx_image: xcode11.2
 language: objective-c
-cache: cocoapods
 podfile: Example/Podfile
 before_install:
 - pod install --project-directory=Example
+xcode_workspace: Example/ScaledCenterCarousel.xcworkspace
+xcode_scheme: ScaledCenterCarousel-Example
+xcode_destination: platform=iOS Simulator,OS=13.2,name=iPhone 11
+xcode_sdk: iphonesimulator13.2
 script:
-- set -o pipefail && xcodebuild test -workspace Example/ScaledCenterCarousel.xcworkspace -scheme ScaledCenterCarousel-Example -sdk iphonesimulator10.3 ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone SE' | xcpretty
+- set -o pipefail && xcodebuild test -workspace Example/ScaledCenterCarousel.xcworkspace -scheme ScaledCenterCarousel-Example -sdk iphonesimulator13.2 ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,OS=13.2,name=iPhone 11' | xcpretty
 - pod lib lint

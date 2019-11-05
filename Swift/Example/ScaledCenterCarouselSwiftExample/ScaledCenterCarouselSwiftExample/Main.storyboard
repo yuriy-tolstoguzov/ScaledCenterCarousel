@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o2x-hz-A4A">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="08G-ua-ApH">
+            <objects>
+                <viewController id="o2x-hz-A4A" customClass="ViewController" customModule="ScaledCenterCarouselSwiftExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AgR-AN-5BQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="FWG-vi-AFo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rnw-yt-d7i">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t8s-G5-mcY" userLabel="Horizontal Center View">
+                                <rect key="frame" x="206.5" y="398" width="1" height="100"/>
+                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="DiL-Kg-xCw"/>
+                                    <constraint firstAttribute="width" constant="1" id="hpT-U1-Y9n"/>
+                                </constraints>
+                            </view>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hjk-H5-kzw">
+                                <rect key="frame" x="0.0" y="408" width="414" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="tzh-fy-VZX"/>
+                                </constraints>
+                                <collectionViewLayout key="collectionViewLayout" id="i7U-1N-BZC" customClass="ScaledCenterCarouselLayout" customModule="ScaledCenterCarousel">
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="point" keyPath="proposedContentOffset">
+                                            <point key="value" x="100" y="0.0"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="size" keyPath="centerCell">
+                                            <size key="value" width="90" height="65"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="size" keyPath="normalCell">
+                                            <size key="value" width="53" height="60"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </collectionViewLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="cIc-oH-4YW" customClass="CarouselCell" customModule="ScaledCenterCarouselSwiftExample" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T8S-bz-b8f">
+                                                    <rect key="frame" x="1" y="1" width="48" height="48"/>
+                                                    <color key="backgroundColor" white="0.88457761779999999" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWw-gP-A5J">
+                                                    <rect key="frame" x="4" y="14.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.8971585648" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="ZWw-gP-A5J" firstAttribute="centerX" secondItem="cIc-oH-4YW" secondAttribute="centerX" id="2l6-qx-97X"/>
+                                            <constraint firstAttribute="trailing" secondItem="T8S-bz-b8f" secondAttribute="trailing" constant="1" id="5QX-NS-OI3"/>
+                                            <constraint firstItem="T8S-bz-b8f" firstAttribute="top" secondItem="cIc-oH-4YW" secondAttribute="top" constant="1" id="JMX-Td-Woj"/>
+                                            <constraint firstItem="ZWw-gP-A5J" firstAttribute="centerY" secondItem="cIc-oH-4YW" secondAttribute="centerY" id="kod-NH-wjo"/>
+                                            <constraint firstItem="T8S-bz-b8f" firstAttribute="leading" secondItem="cIc-oH-4YW" secondAttribute="leading" constant="1" id="nDK-OJ-7NK"/>
+                                            <constraint firstAttribute="bottom" secondItem="T8S-bz-b8f" secondAttribute="bottom" constant="1" id="u4f-Bi-N8t"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="label" destination="ZWw-gP-A5J" id="6zO-wf-z82"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="hjk-H5-kzw" secondAttribute="centerY" id="8l8-JK-zwP"/>
+                            <constraint firstAttribute="centerY" secondItem="t8s-G5-mcY" secondAttribute="centerY" id="LKR-JY-c6k"/>
+                            <constraint firstAttribute="trailing" secondItem="hjk-H5-kzw" secondAttribute="trailing" id="OQv-b5-VRJ"/>
+                            <constraint firstAttribute="centerX" secondItem="t8s-G5-mcY" secondAttribute="centerX" id="XQ8-ac-y3O"/>
+                            <constraint firstItem="hjk-H5-kzw" firstAttribute="leading" secondItem="Rnw-yt-d7i" secondAttribute="leading" id="jqb-IP-Gz2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="LTf-zo-u7O"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="hjk-H5-kzw" id="mGN-7R-6GH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdL-0b-nur" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.5" y="35.5"/>
+        </scene>
+    </scenes>
+</document>

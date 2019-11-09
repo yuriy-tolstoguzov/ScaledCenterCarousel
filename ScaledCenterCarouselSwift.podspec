@@ -14,8 +14,8 @@ It also contains paginator to force user to select single item which will be pre
   spec.author                 = { 'yuriy-tolstoguzov' => 'Yuriy.Tolstoguzov@gmail.com' }
   spec.social_media_url       = 'https://twitter.com/ImOssir'
 
-  spec.platform               = :ios
   spec.ios.deployment_target  = "8.0"
+  spec.swift_version          = "5.0"
   spec.source                 = { :git => 'https://github.com/yuriy-tolstoguzov/ScaledCenterCarousel.git', :tag => "#{spec.version}-Swift" }
   spec.source_files           = 'Swift/ScaledCenterCarousel/Classes/**/*'
   spec.frameworks             = 'UIKit'

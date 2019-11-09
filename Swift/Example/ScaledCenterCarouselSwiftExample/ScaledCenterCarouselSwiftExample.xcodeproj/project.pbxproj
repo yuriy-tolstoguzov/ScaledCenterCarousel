@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F6899EA5235D2CB200407846 /* ScaledCenterCarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6899EA2235D2CA300407846 /* ScaledCenterCarousel.framework */; };
-		F6899EA6235D2CBC00407846 /* ScaledCenterCarousel.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F6899EA2235D2CA300407846 /* ScaledCenterCarousel.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F69B819C2376851F001ED129 /* ScaledCenterCarousel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F69B8199237684FA001ED129 /* ScaledCenterCarousel.framework */; };
 		F6E29B91235D059900E10EA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E29B90235D059900E10EA7 /* AppDelegate.swift */; };
 		F6E29B97235D059B00E10EA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6E29B96235D059B00E10EA7 /* Assets.xcassets */; };
 		F6E29B9D235D059B00E10EA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6E29B9B235D059B00E10EA7 /* LaunchScreen.storyboard */; };
@@ -19,16 +18,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F6899EA1235D2CA300407846 /* PBXContainerItemProxy */ = {
+		F69B8198237684FA001ED129 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F6899E9D235D2CA300407846 /* ScaledCenterCarousel.xcodeproj */;
+			containerPortal = F69B8194237684FA001ED129 /* ScaledCenterCarousel.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = F6CCE38A235BC826001CC2E5;
 			remoteInfo = ScaledCenterCarousel;
 		};
-		F6899EA3235D2CAD00407846 /* PBXContainerItemProxy */ = {
+		F69B819A23768518001ED129 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F6899E9D235D2CA300407846 /* ScaledCenterCarousel.xcodeproj */;
+			containerPortal = F69B8194237684FA001ED129 /* ScaledCenterCarousel.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = F6CCE389235BC826001CC2E5;
 			remoteInfo = ScaledCenterCarousel;
@@ -42,7 +41,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F6899EA6235D2CBC00407846 /* ScaledCenterCarousel.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F6899E9D235D2CA300407846 /* ScaledCenterCarousel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ScaledCenterCarousel.xcodeproj; path = ../../ScaledCenterCarousel/ScaledCenterCarousel.xcodeproj; sourceTree = "<group>"; };
+		F69B8194237684FA001ED129 /* ScaledCenterCarousel.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ScaledCenterCarousel.xcodeproj; path = ../../ScaledCenterCarousel.xcodeproj; sourceTree = "<group>"; };
 		F6E29B8D235D059900E10EA7 /* ScaledCenterCarouselSwiftExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScaledCenterCarouselSwiftExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6E29B90235D059900E10EA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6E29B96235D059B00E10EA7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,17 +65,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6899EA5235D2CB200407846 /* ScaledCenterCarousel.framework in Frameworks */,
+				F69B819C2376851F001ED129 /* ScaledCenterCarousel.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F6899E9E235D2CA300407846 /* Products */ = {
+		F69B8195237684FA001ED129 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F6899EA2235D2CA300407846 /* ScaledCenterCarousel.framework */,
+				F69B8199237684FA001ED129 /* ScaledCenterCarousel.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,7 +115,7 @@
 		F6E29BAC235D1C4500E10EA7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F6899E9D235D2CA300407846 /* ScaledCenterCarousel.xcodeproj */,
+				F69B8194237684FA001ED129 /* ScaledCenterCarousel.xcodeproj */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -137,7 +135,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				F6899EA4235D2CAD00407846 /* PBXTargetDependency */,
+				F69B819B23768518001ED129 /* PBXTargetDependency */,
 			);
 			name = ScaledCenterCarouselSwiftExample;
 			productName = ScaledCenterCarouselSwiftExample;
@@ -172,8 +170,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = F6899E9E235D2CA300407846 /* Products */;
-					ProjectRef = F6899E9D235D2CA300407846 /* ScaledCenterCarousel.xcodeproj */;
+					ProductGroup = F69B8195237684FA001ED129 /* Products */;
+					ProjectRef = F69B8194237684FA001ED129 /* ScaledCenterCarousel.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -184,11 +182,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		F6899EA2235D2CA300407846 /* ScaledCenterCarousel.framework */ = {
+		F69B8199237684FA001ED129 /* ScaledCenterCarousel.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ScaledCenterCarousel.framework;
-			remoteRef = F6899EA1235D2CA300407846 /* PBXContainerItemProxy */;
+			remoteRef = F69B8198237684FA001ED129 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -221,10 +219,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F6899EA4235D2CAD00407846 /* PBXTargetDependency */ = {
+		F69B819B23768518001ED129 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ScaledCenterCarousel;
-			targetProxy = F6899EA3235D2CAD00407846 /* PBXContainerItemProxy */;
+			targetProxy = F69B819A23768518001ED129 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

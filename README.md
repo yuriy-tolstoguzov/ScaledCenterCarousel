@@ -22,21 +22,21 @@ The library is made purposely simple, but there are number of ways you can custo
 
 ### Layout
 
-- `centerCellHeight` - The height of cell at the center position.
-- `centerCellWidth` - The width of cell at the center position.
-- `normalCellHeight` - The height of cells that far enough from the center position.
-- `normalCellWidth` - The width of cells that far enough from the center position.
+- `centerCellHeight/centerCell.height` - The height of cell at the center position.
+- `centerCellWidth/centerCell.width` - The width of cell at the center position.
+- `normalCellHeight/normalCell.height` - The height of cells that far enough from the center position.
+- `normalCellWidth/normalCell.width` - The width of cells that far enough from the center position.
 - `proposedContentOffset` - The content offset that will be set once after next data source change. Think about adding items after you get them from web service and you want to pre-select one of them.
 
 ### Pagination (UICollectionViewDelegate)
 
-If you want user to be able to select only one item at a time, you probably will use built-in `YTScaledCenterCarouselPaginator` and set it as your `UICollectionView` delegate.
+If you want user to be able to select only one item at a time, you probably will use built-in `YTScaledCenterCarouselPaginator/ScaledCenterCarouselPaginator` and set it as your `UICollectionView` delegate.
 
 It has next delegate methods:
-- `-carousel:didSelectElementAtIndex:`
-- `-carousel:didScrollToVisibleCells:`
+- `-carousel:didSelectElementAtIndex: / carousel(_,didSelectElementAt)`
+- `-carousel:didScrollToVisibleCells: / carousel(_,didScrollTo)`
 
-If your data source will adopt `YTScaledCenterCarouselDataSource` protocol. It will always know what item is selected now and can use this knowledge to add some customization to selected cells. Also it encouraged to check cell selected state, because it's updated accordingly as well.
+If your data source will adopt `YTScaledCenterCarouselDataSource/ScaledCenterCarouselDataSource` protocol. It will always know what item is selected now and can use this knowledge to add some customization to selected cells. Also it encouraged to check cell selected state, because it's updated accordingly as well.
 
 ## Requirements
 
@@ -50,7 +50,9 @@ To install
 it through [CocoaPods](http://cocoapods.org), simply add the following line to your Podfile:
 
 ```ruby
-pod "ScaledCenterCarousel"
+pod "ScaledCenterCarousel"      # ObjC version
+
+pod "ScaledCenterCarouselSwift" # Swift version
 ```
 
 Run update command in your terminal:
@@ -81,9 +83,9 @@ yuriy-tolstoguzov, Yuriy.Tolstoguzov@gmail.com
 ## Contribution
 
 If you want to contribute, here is couple of topics I have in mind:
+- [X] Swift migration
 - [ ] Support for vertical layout
 - [ ] Documentation improvements
-- [ ] Swift migration
 
 Feel free to make a pull requests or contact me if you have questions.
 

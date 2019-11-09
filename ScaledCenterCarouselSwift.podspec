@@ -16,7 +16,7 @@ It also contains paginator to force user to select single item which will be pre
 
   spec.platform               = :ios
   spec.ios.deployment_target  = "8.0"
-  spec.source                 = { :git => 'https://github.com/yuriy-tolstoguzov/ScaledCenterCarousel.git', :tag => "#{spec.version}" }
+  spec.source                 = { :git => 'https://github.com/yuriy-tolstoguzov/ScaledCenterCarousel.git', :tag => "#{spec.version}-Swift" }
   spec.source_files           = 'Swift/ScaledCenterCarousel/Classes/**/*'
   spec.frameworks             = 'UIKit'
 
